@@ -9,5 +9,4 @@ const Question = ({ title, info }) => {
     </>
   );
 };
-
 export default Question;
