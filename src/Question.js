@@ -7,7 +7,15 @@ const Question = ({ title, info }) => {
       <div className="question">
         <header>
           <h4>{title}</h4>
-          <button className="btn">btn</button>
+          <button
+            className="btn"
+            onClick={() => {
+              displayInfo === true
+                ? setDisplayInfo(false)
+                : setDisplayInfo(true);
+            }}>
+            btn
+          </button>
         </header>
         {displayInfo && <p>{info}</p>}
       </div>
